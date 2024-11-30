@@ -1,0 +1,21 @@
+<h2>Lista de Reseñas</h2>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th><b>Restaurante</b></th>
+      <th><b>Puntuación (1-5)</b></th>
+      <th><b>Comentario</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let resena of listaResenas.resenasEncontradas">
+      <td>{{ resena.restaurante }}</td>
+      <td>{{ resena.puntuacion }}</td>
+      <td>
+        {{ resena.comentario }}
+        <span *ngIf="resena.puntuacion >= 4" style="color: green;"><b> ¡Alta Puntuación!</b></span>
+      </td>
+    </tr>
+  </tbody>
+</table>

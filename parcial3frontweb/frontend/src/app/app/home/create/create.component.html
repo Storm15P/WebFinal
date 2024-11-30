@@ -1,0 +1,46 @@
+<h2>Crear curso</h2>
+
+
+<div class="row">
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbNombreRestaurante">Restaurante</label>
+    </div>
+
+    <div class="col-6 ">
+        <input type="text" id="tbNombreRestaurante"[(ngModel)]= "nombreRestaurante" >
+    </div>
+
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbPuntuacionRestaurante">Puntuacion 1-5</label>
+    </div>
+
+    <div class="col-6 ">
+        <input type="text" id="tbPuntuacionRestaurante"[(ngModel)]= "puntuacionRestaurante" >
+    </div>
+
+
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbComentarioRestaurante">Comentario</label>
+    </div>
+
+    <div class="col-6 ">
+        <input type="text" id="tbComentarioRestaurante"[(ngModel)]= "comentarioRestaurante" >
+    </div>
+
+
+
+    <div class="col-12 d-flex justify-content-center">
+        <button class="btn btn-primary"
+            (click) = "createCourse()">
+            Publicar reseña
+
+        </button>
+
+    </div>
+
+
+
+</div>
